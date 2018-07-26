@@ -8,3 +8,15 @@
     height: 100px;
     width: 100px;
 }
+
+#paper{
+    height: 100px;
+    width: 100px;
+}
+
+#droppable{ 
+    width: 150px; 
+    height: 150px; 
+    padding: 0.5em; 
+    float: left; 
+    margin: 10px; }
