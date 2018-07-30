@@ -5,9 +5,10 @@ $(function(){
 });
 
 $(function(){
+     $('#paper').draggable()({ revert: "valid" });
+})
+
+$(function(){
    $('#droppable').droppable(); 
 });
 
-$(function(){
-     $('#paper').draggable()({ revert: "valid" });
-})
