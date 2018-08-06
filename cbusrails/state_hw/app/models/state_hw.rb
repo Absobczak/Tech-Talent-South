@@ -1,0 +1,2 @@
+class StateHw < ApplicationRecord
+end

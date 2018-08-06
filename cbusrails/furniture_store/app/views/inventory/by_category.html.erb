@@ -1,0 +1,18 @@
+<h1>Check out our <%=  @category %> page</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Product</th>
+        <th>Category</th>
+    </tr>
+    
+    <% @products.each do |product| %>
+        <tr>
+            <td><%= product.name %></td>
+            <td><%= number_to_currency(product.price) %></td>
+            <td><%= product.category %></td>
+        </tr>
+    <% end %>
+</table>
+

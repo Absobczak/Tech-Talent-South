@@ -13,11 +13,12 @@ def plate_load_total
 
     puts plate_load
 
-    case
 
-        when plate_load - @plates_total[0] >= 0
+        if plate_load - @plates_total[0] >= 0
             forty_five(plate_load)
-        when plate_load - @plates_total[0] < 0
+        end
+        
+        if plate_load < 90
             if plate_load - @plates_total[1] >= 0
                 thirty_five(plate_load)
             elsif plate_load - @plates_total[1] < 0
@@ -45,8 +46,7 @@ def plate_load_total
                 end
     
             end
-
-    end
+        end
 end
 
 plate_load_total

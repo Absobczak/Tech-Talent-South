@@ -1,0 +1,24 @@
+<h1>Please select the background color you'd like to populate moving forward:</h1>
+
+<% if !@name.blank? %>
+    <h2>Welcome back, <%= @name %></h2>
+<% end %>
+
+<p>
+    <%= link_to "Red", about_path(color: "maroon") %>
+</p>
+
+<p>
+    <%= link_to "Blue", about_path(color: "aqua") %>
+</p>
+
+<p>
+    <%= link_to "Green", about_path(color: "lime") %>
+</p>
+
+
+<p>
+    <%= link_to "Purple", about_path(color: "#ff0066") %>
+</p>
+
+

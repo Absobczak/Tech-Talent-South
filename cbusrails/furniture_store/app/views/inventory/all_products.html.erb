@@ -1,0 +1,17 @@
+<h1>Our Entire Inventory</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+    </tr>
+    
+    <% @products.each do |product| %>
+        <tr>
+            <td><%= product.name%></td>
+            <td><%= number_to_currency(product.price) %></td>
+            <td><%= link_to product.category, category_path(category: product.category) %></td>
+        </tr>
+    <% end %>
+</table>

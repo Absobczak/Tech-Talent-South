@@ -1,0 +1,30 @@
+<style>
+    
+    #first_color{
+        background-color: <%= @color %>;
+        color: white;
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+</style>
+
+<div id="first_color">
+    
+    <p>
+        <%= @color.upcase %> This is the color you selected!
+    </p>
+    
+</div>
+
+<div>
+    
+    <%= form_tag index_path do %>
+        
+        <p><%= text_field_tag :name, nil, placeholder: "What's your name?" %></p>
+        <p><%= submit_tag :BOOM! %></p>
+    
+    <% end %>
+    
+</div>

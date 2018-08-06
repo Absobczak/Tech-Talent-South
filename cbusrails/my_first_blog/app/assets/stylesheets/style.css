@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+#stupid {
+  background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%),url("https://orig00.deviantart.net/abba/f/2008/353/6/d/cloudy_moon_by_xeeshan_ch.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
